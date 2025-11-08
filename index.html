@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز تأهيل للعلاج الطبيعي</title>
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- تحميل خط Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* تطبيق الخط على كامل الصفحة */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* تعديل بسيط لاتجاه الأيقونات في حالة RTL */
+        .icon-wrapper svg {
+            margin-left: 0.5rem; /* ml-2 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- الشريط العلوي -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <!-- أيقونة مستوحاة من اللوجو -->
+                <svg class="h-10 w-10 text-teal-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.51M12.75 19.98v.51m8.25-8.76h.51M2.49 12.51h.51m17.52 0a9.75 9.75 0 11-19.5 0 9.75 9.75 0 0119.5 0zM7.72 6.06l.36.36m11.88 11.88l.36.36m-12.6-12.6l-.36.36M16.28 17.94l-.36.36" />
+                </svg>
+                <h1 class="text-2xl font-bold text-teal-700">مركز تأهيل للعلاج الطبيعي</h1>
+            </div>
+            <a href="#contact" class="px-4 py-2 bg-teal-600 text-white rounded-lg shadow hover:bg-teal-700 transition-colors">
+                تواصل معنا
+            </a>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <!-- قسم الهيرو -->
+        <section class="bg-gradient-to-b from-teal-50 to-gray-50 py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-teal-800 mb-6">
+                    استعد نشاطك. عش بلا قيود.
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                    نحن هنا لمساعدتك على استعادة حركتك وحيويتك بأحدث برامج العلاج الطبيعي والتأهيل.
+                </p>
+                <a href="#services" class="px-8 py-3 bg-teal-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-teal-700 transition-colors transform hover:scale-105">
+                    اكتشف خدماتنا
+                </a>
+            </div>
+        </section>
+
+        <!-- قسم الخدمات -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">خدماتنا الطبية بالمركز</h3>
+                    <p class="text-lg text-gray-500">نقدم رعاية متكاملة لمختلف الحالات والإصابات.</p>
+                </div>
+                
+                <!-- شبكة الخدمات -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- بطاقة خدمة 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="icon-wrapper w-16 h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mb-6">
+                            <!-- أيقونة للعمود الفقري -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">أمراض العمود الفقري</h4>
+                        <p class="text-gray-600">
+                            علاج متخصص للانزلاق الغضروفي، عرق النسا، وخشونة فقرات الظهر والرقبة.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة خدمة 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="icon-wrapper w-16 h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mb-6">
+                            <!-- أيقونة للتأهيل -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.092 1.21-.138 2.43-.138 3.662m14.862 0c0 1.232-.046 2.453-.138 3.662a4.006 4.006 0 01-3.7 3.7 48.656 48.656 0 01-7.324 0 4.006 4.006 0 01-3.7-3.7c-.092-1.21-.138-2.43-.138-3.662m14.862 0l-2.04-2.04m-10.782 0l-2.04 2.04m14.862 0l-2.04 2.04m-10.782 0l-2.04-2.04" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">التأهيل بعد الجراحات</h4>
+                        <p class="text-gray-600">
+                            برامج تأهيل مكثفة لاستعادة الوظيفة بعد الجراحات، الكسور، وجراحات المناظير.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة خدمة 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="icon-wrapper w-16 h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mb-6">
+                            <!-- أيقونة لإصابات الملاعب -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">تأهيل إصابات الملاعب</h4>
+                        <p class="text-gray-600">
+                            رعاية متخصصة لإصابات الرياضيين، بما في ذلك تأهيل الرباط الصليبي وغضروف الركبة.
+                        </p>
+                    </div>
+
+                    <!-- بطاقة خدمة 4 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="icon-wrapper w-16 h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mb-6">
+                            <!-- أيقونة للمفاصل -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.32-.468.557-.328l5.603 3.112z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">مشاكل المفاصل والكتف</h4>
+                        <p class="text-gray-600">
+                            علاج خشونة المفاصل ومشاكل مفصل الكتف والتهاب الأوتار لراحة تدوم.
+                        </S>
+                    </div>
+
+                    <!-- بطاقة خدمة 5 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="icon-wrapper w-16 h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mb-6">
+                            <!-- أيقونة للأعصاب -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">تأهيل الحالات العصبية</h4>
+                        <p class="text-gray-600">
+                            برامج تأهيل لحالات الجلطات، الشلل النصفي، واعتلال العصب السابع (أبو الوجوه).
+                        </p>
+                    </div>
+
+                    <!-- بطاقة خدمة 6 -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="icon-wrapper w-16 h-16 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center mb-6">
+                            <!-- أيقونة للاستشفاء -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-3">الاستشفاء العضلي</h4>
+                        <p class="text-gray-600">
+                            جلسات الاستشفاء العضلي والحجامة لإراحة العضلات وتحسين الأداء.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأخصائيين -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">فريق الأخصائيين</h3>
+                    <p class="text-lg text-gray-500">خبرات متخصصة في خدمتكم.</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-10">
+                    <!-- بطاقة أخصائي 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-sm text-center">
+                        <img src="https://placehold.co/400x300/E0F2F1/374151?text=Dr.+Ramy" alt="د/ رامي أحمد البهلول" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <h4 class="text-2xl font-bold text-teal-800 mb-2">د/ رامي أحمد البهلول</h4>
+                            <p class="text-teal-600 font-medium">أخصائي العلاج الطبيعي</p>
+                        </div>
+                    </div>
+                    
+                    <!-- بطاقة أخصائي 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-sm text-center">
+                        <img src="https://placehold.co/400x300/E0F2F1/374151?text=Dr.+Khaled" alt="د/ خالد محمود عبد السيد" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <h4 class="text-2xl font-bold text-teal-800 mb-2">د/ خالد محمود عبد السيد</h4>
+                            <p class="text-teal-600 font-medium">أخصائي العلاج الطبيعي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- الفوتر (للتواصل) -->
+    <footer id="contact" class="bg-gray-800 text-white pt-16 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- معلومات التواصل -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6">تواصل معنا</h4>
+                    <p class="text-gray-300 mb-8 max-w-lg">
+                        نحن في انتظارك لتقديم أفضل رعاية. اتصل بنا لحجز موعدك أو للاستفسار عن خدماتنا.
+                    </p>
+                    <div class="space-y-4">
+                        <!-- أرقام التواصل -->
+                        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-teal-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.381-.92-.894-1.062l-4.12-1.372a1.125 1.125 0 00-1.31.402l-.8 1.123A17.96 17.96 0 015.625 5.625l1.123-.8a1.125 1.125 0 00.402-1.31L6.063 2.39a1.125 1.125 0 00-1.062-.894H3.75A2.25 2.25 0 001.5 3.75v3z" />
+                            </svg>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4 rtl:sm:space-x-reverse" style="direction: ltr;">
+                                <span class="text-lg font-semibold tracking-wider text-gray-100">01550753607</span>
+                                <span class="text-gray-300 sm:block hidden">|</span>
+                                <span class="text-lg font-semibold tracking-wider text-gray-100">01102079404</span>
+                            </div>
+                        </div>
+                        <!-- العنوان -->
+                        <div class="flex items-start space-x-3 rtl:space-x-reverse">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-teal-400 mt-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            <span class="text-lg text-gray-100">
+                                طنطا - سبرباي - اخر شارع الست عديلة
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خريطة (مكانها) -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden h-64 md:h-auto">
+                    <!-- هذا مجرد إطار للخريطة -->
+                    <div class="w-full h-full flex items-center justify-center text-gray-400">
+                        [ مكان مخصص للخريطة التفاعلية - Google Maps ]
+                    </div>
+                    <!-- يمكنك استبدال الـ div أعلاه بـ iframe من خرائط جوجل -->
+                </div>
+            </div>
+            
+            <!-- حقوق النشر -->
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 مركز تأهيل للعلاج الطبيعي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
